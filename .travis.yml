@@ -3,7 +3,7 @@ services:
   - docker
 
 before-install:
-  - docker build -t sirajalik/docker-react -f Dockerfile.dev .
+  - docker build -t sirajalik/docker-react -f Dockerfile .
 
 script:
   - docker run sirajalik/docker-react npm run test -- --coverage
